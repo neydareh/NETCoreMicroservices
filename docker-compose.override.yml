@@ -20,7 +20,6 @@ services:
     ports:
       - "7003:80"
 
-
   ecommerce.api.search:
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
