@@ -32,4 +32,4 @@ jobs:
         
         
     - name: Print Environment Variables
-      run: $env:Solution_Name $env:Test_Project_Path
+      run: ${{ env.Solution_Name }}
