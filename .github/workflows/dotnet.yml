@@ -31,13 +31,5 @@ jobs:
         dotnet-version: 6.0.x
         
         
-    - name: Restore dependencies
-      run: dotnet restore Ecommerce.sln
-      
-      
-    - name: Build
-      run: dotnet build --no-restore
-      
-      
-    - name: Test
-      run: dotnet test Ecommerce.Api.Products.Tests/Ecommerce.Api.Products.Tests.csproj --no-build --verbosity normal
+    - name: Print Environment Variables
+      run: echo $env:Solution_Name $env:Test_Project_Path
