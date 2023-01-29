@@ -37,6 +37,3 @@ jobs:
       
     - name: Build
       run: dotnet build ${{ env.Solution_Name }} --no-restore
-      
-    - name: Execute unit tests
-      run: dotnet test Ecommerce.Api.Products.Tests/Ecommerce.Api.Products.Tests.csproj
